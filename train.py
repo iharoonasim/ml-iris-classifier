@@ -1,3 +1,4 @@
+# simple iris classifier project
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -24,5 +25,6 @@ pred = model.predict(X_test)
 
 # accuracy
 acc = accuracy_score(y_test, pred)
+
 
 print("Accuracy:", acc)
